@@ -180,7 +180,26 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 ////////// PROBLEM 11 //////////
 /* The famous FizzBuzz, Devmountain style!
   Create a for loop that iterates from 1 to 100. In this for loop, using some conditional logic, if the number your for loop is currently on is divisible by 3, console.log 'Dev'. If the number is divisible by 5, console.log 'mountain'. If the number is divisible by 5 & 3, console.log 'Devmountain'. If the number is not divisible by 5 or 3, console.log the number itself. Hint: Look up the modulo operator.
+*/
 
+for(let i = 1; i <= 100; i++){
+  switch(true){
+    case (i % 3 == 0 && i % 5 == 0):
+      console.log("devmountain")
+      break;
+    case (i % 3 == 0):
+      console.log("dev")
+      break;
+    case (i % 5 == 0):
+      console.log("mountain")
+      break;
+    default: 
+      console.log(i)
+    } 
+}
+
+
+  /*
   Your output should look like:
   1
   2
@@ -200,5 +219,3 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
   16
   ...
 */
-
-//Code Here
